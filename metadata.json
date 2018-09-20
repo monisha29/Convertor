@@ -1,0 +1,56 @@
+{
+  "base_obj": {
+    "find": "article",
+    "inside": {
+      "find_all": "section",
+      "class": ""
+    }
+  },
+  "attributes": [
+    {
+      "itemname": {
+        "find": "h3","class":"heading-3"
+      }
+    },
+    {
+      "itemprice": {
+        "find": "ul",
+        "class": "department clearfix",
+        "inside": {
+          "find": "li",
+          "class": "paid-amount"
+        }
+      }
+    },
+    {
+      "itemdepartment": {
+        "find": "ul",
+        "class": "department clearfix",
+        "inside": {
+          "find": "li",
+          "class": "name"
+        }
+      }
+    },
+    {
+      "itemview": {
+        "find": "ul",
+        "class": "overview clearfix",
+        "inside": {
+          "find": "li",
+          "class": "views"
+        }
+      }
+    },
+    {
+      "itemcity": {
+        "find": "div",
+        "class": "key",
+        "inside": {
+          "find": "a",
+          "class": "location"
+        }
+      }
+    }
+  ]
+}
